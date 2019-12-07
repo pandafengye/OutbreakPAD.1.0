@@ -1,7 +1,5 @@
-__version__ = '0.4'
+__version__ = '1.0'
 __author__ = "Shengmei Zou"
-__email__ = "21818662@zju.edu.cn"
-
 import warnings
 warnings.simplefilter("ignore")
 from matplotlib.pylab import rcParams
