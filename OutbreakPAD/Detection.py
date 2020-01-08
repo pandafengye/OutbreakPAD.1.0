@@ -1,4 +1,4 @@
-#加载模块
+#Load module
 from .Detection_Methods  import Kendall_change_point_detection,Pettitt_change_point_detection,\
     Buishand_U_change_point_detection,SNHT_change_point_detection,CUSUM,EWMA,Pvalue_CUSUM
 from .Prediction import read_data
@@ -11,7 +11,7 @@ def Detection(data,pvalue_cusum_k,start_date="1/1/2014"):
     print("##############  Now Read the file  ####################")
     print("Detecting outbreak data\n")
     print("7 detection methods to detect outbreaks")
-    if type(data)==str:#如果data输入为.csv文件路径
+    if type(data)==str:#If data input is .csv file path
         data=read_data(data,start_date=start_date)
         print("Method 1: Mann-Kendall \n")
         MK=Kendall_change_point_detection(data)
@@ -29,7 +29,7 @@ def Detection(data,pvalue_cusum_k,start_date="1/1/2014"):
         EWMA_Test=EWMA(data)
         print("Method 7: Pvalue_CUSUM \n")
         Pvalue_CUSUM_Test=Pvalue_CUSUM(data,k=pvalue_cusum_k)
-    else:#如果输入data为pandas.core.series.Series
+    else:#If the input data is pandas.core.series.Series
         print("Method 1: Mann-Kendall \n")
         MK=Kendall_change_point_detection(data)
         print("Method 2: Pettitt \n")
