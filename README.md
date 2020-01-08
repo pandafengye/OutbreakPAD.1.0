@@ -12,7 +12,7 @@
   ```python
   from OutbreakPAD import *
   #    Forecasting with ARIMA-GRNN (recommended)
-  OutbreakPAD.PAD(example,p=2,d=0,q=1,a="ARIMA-GRNN",pvalue_cusum_k=1.5) 
+  PAD(example,p=2,d=0,q=1,a="ARIMA-GRNN",pvalue_cusum_k=1.5) 
   
   ```
 # OutbreakPAD input file
