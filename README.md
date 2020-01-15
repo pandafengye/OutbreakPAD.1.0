@@ -4,8 +4,8 @@
 # Download and install
 ##  in linux
   ```bash
-  git clone https://github.com/pandafengye/OutbreakPAD.git    
-  cd OutbreakPAD  
+  git clone https://github.com/pandafengye/OutbreakPAD.1.0.git    
+  cd OutbreakPAD.1.0  
   python setup.py install 
   ```  
 # Example
